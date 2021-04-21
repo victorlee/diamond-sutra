@@ -7,12 +7,7 @@
 @font-face {
   font-family: 'Kaiti';
   src: url(../fonts/kaiti.ttf);
-  unicode-range: U+20, U+0590-1879, U+18AB-202E, U+2030-FFFF;
-}
-@font-face {
-    font-family: 'Mongolian Baiti';
-    src: url(../font/monbaiti.ttf);
-    unicode-range: U+1800-18AA, U+202F;
+  unicode-range: U+20, U+0590-FFFF;
 }
 @font-face {
   font-family: 'Times New Roman';
@@ -27,29 +22,56 @@
     font-family: 'Yagpo Tibetan Uni';
     src: url(../fonts/YagpoTibetanUni.woff2);
 }
-textarea, pre {
-    font-family: Kaiti, Mongolian Baiti, Times New Roman, Noto Serif Devanagari, Yagpo Tibetan Uni;
-    font-size: 24px;
+@font-face {
+    font-family: 'Mongolian Baiti';
+    src: url(../font/monbaiti.ttf);
 }
-textarea {
+pre {
+    font-family: Kaiti, Times New Roman, Noto Serif Devanagari, Yagpo Tibetan Uni;
+    font-size: 24px;
     outline: none; 
     border: none;
     width: 100%;
     height: 100%;
     resize: none;
-    padding: 12px 10px;
+    padding: 12px;
     line-height: 1.7;
-}
-::selection {background: #B5D6FC; color: #000;}
-pre {
     white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+::selection {
+  background: #B5D6FC; color: #000;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+  background: #CCC; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AAA; 
+}
+.m {
+    font-family: 'mongolian baiti';
+    writing-mode: vertical-lr;
+    font-size: 30px;
+    line-height: 1.2;
+    max-width: 100%;
+    max-height: 9em;
+    overflow-x: auto;
+    padding-top: 0rem;
+    vertical-align: text-top;
+    padding: 18px 0px;
     word-wrap: break-word;
 }
 </style>
 </head>
 <body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
-<textarea cols="100" rows="30" spellcheck="false">
+<pre>
 如是我聞 一時 佛在舍衛國祇樹給孤獨園 與大比丘衆千二百五十人俱 爾時 世尊食時 著衣持鉢 入舍衛大城乞食 於其城中 次第乞已 還至本處 飯食訖 收衣鉢 洗足已 敷座而坐
-
-एवम् मया श्रुतं एकस्मिन् समये। भगवावाञ् श्रावस्त्यां</textarea>
+</pre>
 </body>

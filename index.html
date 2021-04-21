@@ -4,28 +4,7 @@
 <meta name="robots" content="noindex">
 <meta charset="utf-8">
 <style>
-@font-face {
-  font-family: 'Kaiti';
-  src: url(../fonts/kaiti.ttf);
-  unicode-range: U+20, U+0590-FFFF;
-}
-@font-face {
-  font-family: 'Times New Roman';
-  src: url(../fonts/TimesNewRoman.woff);
-  unicode-range: U+0001-0019, U+0021-058F;
-}
-@font-face {
-  font-family: 'Noto Serif Devanagari';
-  src: url(../fonts/NotoSerifDevanagari.woff);
-}
-@font-face {
-    font-family: 'Yagpo Tibetan Uni';
-    src: url(../fonts/YagpoTibetanUni.woff2);
-}
-@font-face {
-    font-family: 'Mongolian Baiti';
-    src: url(../font/monbaiti.ttf);
-}
+@import url(https://victorlee.github.io/fonts/stylesheet.css);
 pre {
     font-family: Kaiti, Times New Roman, Noto Serif Devanagari, Yagpo Tibetan Uni;
     font-size: 24px;
@@ -50,8 +29,21 @@ pre {
 ::-webkit-scrollbar-thumb:hover {
   background: #AAA; 
 }
-.m {
-    font-family: 'mongolian baiti';
+.mo {
+    font-family: 'Mongolian White';
+    writing-mode: vertical-lr;
+    font-size: 30px;
+    line-height: 1.2;
+    max-width: 100%;
+    max-height: 9em;
+    overflow-x: auto;
+    padding-top: 0rem;
+    vertical-align: text-top;
+    padding: 18px 0px;
+    word-wrap: break-word;
+}
+.ma {
+    font-family: 'XM_ZhengHei';
     writing-mode: vertical-lr;
     font-size: 30px;
     line-height: 1.2;
